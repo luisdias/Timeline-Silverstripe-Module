@@ -24,7 +24,8 @@ The Timeline Silverstripe Module uses:
 * Run dev/build
 * on the javascript folder you can find the translation files for the following idioms: french, italian, 
 portuguese and spanish. Remove the comment from the line 57 of the templates/Layout/TimelineHolder.ss file 
-and set it for your idiom.
+and set it for your idiom.  
+
 ## Usage
 * At the CMS add a new page of "Timeline Holder" type
 * Select the cascade style sheet file to use ( Default from verite or dark template from tutorialzine )
