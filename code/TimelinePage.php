@@ -48,6 +48,7 @@ class TimelinePage extends Page {
 
         $EndDate = new Datefield('EndDate', 'End of Event (optional)');
         $EndDate->setConfig('showcalendar', true);
+        $EndDate->setConfig('dateformat', 'dd-MM-YYYY');
         
         $fields->addFieldToTab('Root.Content.Main', $BeginDate, 'Content');
         $fields->addFieldToTab('Root.Content.Main', $EndDate, 'Content');
