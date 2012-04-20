@@ -23,7 +23,7 @@ The Timeline Silverstripe Module uses:
 * Unpack the files in a folder called timeline
 * Run dev/build
 * on the javascript folder you can find the translation files for the following idioms: french, italian, 
-portuguese and spanish. Remove the comment from the line 57 of the templates/TimelineHolder.ss file 
+portuguese and spanish. Remove the comment from the line 33 of the templates/TimelineHolder.ss file 
 and set it for your idiom.  
 
 ## Usage
