@@ -1,5 +1,5 @@
             <div id="timeline">
-                <% control Children %>
+                <% loop Children %>
                     <% if First %>
                         <section>
                                 <time>$BeginDate.Year,$BeginDate.Format(m),$BeginDate.DayOfMonth</time>
@@ -42,6 +42,6 @@
                                 </figure>
                         </li>                    
                     <% end_if %>
-                <% end_control %>
+                <% end_loop %>
                 </ul>
             </div>

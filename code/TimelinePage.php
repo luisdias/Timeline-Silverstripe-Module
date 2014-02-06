@@ -2,7 +2,7 @@
 /*
 MIT license
 
-Copyright (c) 2012 Luis E. S. Dias - smartbyte.systems@gmail.com
+Copyright (c) 2012-2014 Luis E. S. Dias - smartbyte.systems@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -50,10 +50,10 @@ class TimelinePage extends Page {
         $EndDate->setConfig('showcalendar', true);
         $EndDate->setConfig('dateformat', 'dd-MM-YYYY');
         
-        $fields->addFieldToTab('Root.Content.Main', $BeginDate, 'Content');
-        $fields->addFieldToTab('Root.Content.Main', $EndDate, 'Content');
-        $fields->addFieldToTab('Root.Content.Main', new TextField('Article','Article (Main text)'), 'Content');
-        $fields->addFieldsToTab('Root.Content.Main',
+        $fields->addFieldToTab('Root.Main', $BeginDate, 'Content');
+        $fields->addFieldToTab('Root.Main', $EndDate, 'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('Article','Article (Main text)'), 'Content');
+        $fields->addFieldsToTab('Root.Main',
             array(
                 new TextField('MediaCredit','Credit for media (optional)'),
                 new TextField('MediaCaption','Caption for media (optional)')

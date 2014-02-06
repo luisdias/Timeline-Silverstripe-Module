@@ -2,7 +2,7 @@
 /*
 MIT license
 
-Copyright (c) 2012 Luis E. S. Dias - smartbyte.systems@gmail.com
+Copyright (c) 2012-2014 Luis E. S. Dias - smartbyte.systems@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -46,8 +46,8 @@ class TimelineHolder extends Page {
             'default' => 'Default' ,
             'tutorialzine' => 'Tutorialzine',
         );        
-        $fields->addFieldToTab('Root.Content.Main',new DropdownField('CssFile','Select the cascade style sheet file',$cssFileOptions));
-        $fields->removeFieldFromTab('Root.Content.Main', 'Content');        
+        $fields->addFieldToTab('Root.Main', DropdownField::create('CssFile','Select the cascade style sheet file',$cssFileOptions));
+        $fields->removeFieldFromTab('Root.Main', 'Content');        
         return $fields;
     }
     
